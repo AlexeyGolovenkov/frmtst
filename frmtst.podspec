@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "frmtst"
-  s.version          = "1.8.2"
+  s.version          = "1.8.3"
   s.license          = 'MPL'
   s.homepage         = "https://github.com/AlexeyGolovenkov/frmtst"
   s.author           = "ROKO Labs"
@@ -13,8 +13,8 @@ The ROKO.Mobi SDK provides a means for taking photos, dressing them up in sticke
   s.social_media_url = 'https://twitter.com/rokolabs'
   s.platform         = :ios, '8.0'
   s.requires_arc     = true
-  s.ios.vendored_frameworks = 'ROKOMobi.framework'
-  s.ios.resource            = 'ROKOMobi.framework'
+  s.vendored_frameworks = 'ROKOMobi.framework'
+  s.resource            = 'ROKOMobi.framework'
   s.xcconfig = {
     :"OTHER_LDFLAGS" => "$(inherited) -ObjC"
   }
