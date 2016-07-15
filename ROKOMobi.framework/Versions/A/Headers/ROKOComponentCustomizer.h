@@ -96,4 +96,6 @@ typedef void (^CustomizerCompletionBlock)(ROKOComponentScheme *scheme, NSError *
 
 - (void)addImageObjectToArray:(ROKOImageDataObject *)object toArray:(NSMutableArray *)array;
 
+- (void)dropCacheTimer;
+
 @end
