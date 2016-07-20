@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "frmtst"
-  s.version          = "1.8.310"
+  s.version          = "1.8.31"
   s.license          = 'MPL'
   s.homepage         = "https://github.com/AlexeyGolovenkov/frmtst"
   s.author           = "ROKO Labs"
