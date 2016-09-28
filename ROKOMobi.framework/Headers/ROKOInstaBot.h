@@ -12,7 +12,7 @@
 #import "ROKOInstaBotConversationTreeNode.h"
 #import "ROKOComponent.h"
 
-typedef void (^ROKOInstaBotLoadCompletionBlock)(NSError * _Nullable error);
+typedef void (^ROKOInstaBotLoadCompletionBlock)(ROKOInstaBotViewController * _Nullable controller, NSError * _Nullable error);
 
 /**
  *  ROKO InstaBot class
@@ -23,15 +23,6 @@ typedef void (^ROKOInstaBotLoadCompletionBlock)(NSError * _Nullable error);
  *  Id of the current conversation
  */
 @property (nonatomic, assign, readonly) NSInteger conversationId;
-
-/**
- *  Creates a new instance of ROKOInstaBot view controller
- *
- *  @param conversationId Id of conversation on the portal
- *
- *  @return View controller with the conversation
- */
-+ (nonnull ROKOInstaBotViewController *)buildControllerWithConversationId:(NSInteger)conversationId;
 
 - (void)loadConversationWithId:(NSInteger)conversationId completionBlock:(nonnull ROKOInstaBotLoadCompletionBlock)completionBlock;
 
