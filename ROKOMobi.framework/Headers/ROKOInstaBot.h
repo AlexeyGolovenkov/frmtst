@@ -46,4 +46,6 @@ typedef void (^ROKOInstaBotLoadCompletionBlock)(ROKOInstaBotViewController * _Nu
 
 - (nullable ROKOInstaBotScheme *)uiScheme;
 
+- (nullable NSString *)applicationName;
+
 @end
