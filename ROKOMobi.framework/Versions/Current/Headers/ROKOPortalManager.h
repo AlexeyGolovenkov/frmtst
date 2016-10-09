@@ -103,6 +103,6 @@ typedef void(^ROKOSessionInfoRequestCompletionBlock)(ROKOSessionInfo * __nullabl
  @param name  Name of parameter to be changed
  @param block Completion block to be called when request is finished
  */
-- (void)setUserCustomProperty:(nonnull id)newValue forKey:(nonnull NSString *)name completionBlock:(nullable ROKOPortalRequestCompletionBlock)block;
+- (void)setUserCustomProperty:(nullable id)newValue forKey:(nonnull NSString *)name completionBlock:(nullable ROKOPortalRequestCompletionBlock)block;
 
 @end
