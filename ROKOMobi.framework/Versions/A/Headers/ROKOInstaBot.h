@@ -26,6 +26,8 @@ typedef void (^ROKOInstaBotLoadCompletionBlock)(ROKOInstaBotViewController * _Nu
  */
 @property (nonatomic, assign, readonly) NSInteger conversationId;
 
++ (nullable ROKOInstaBot *)presentingBot;
+
 - (void)loadConversationWithId:(NSInteger)conversationId completionBlock:(nonnull ROKOInstaBotLoadCompletionBlock)completionBlock;
 
 - (nullable ROKOInstaBotViewController *)showBotWithScheme:(nonnull ROKOInstaBotConversation *)scheme;
