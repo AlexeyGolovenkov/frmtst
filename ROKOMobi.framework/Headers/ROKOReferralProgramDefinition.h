@@ -14,7 +14,7 @@
 /**
  *  Program name
  */
-@property (nonatomic, assign, nullable) NSString *name;
+@property (nonatomic, copy, nullable) NSString *name;
 
 /**
  *  Discount definition
