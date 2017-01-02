@@ -97,10 +97,11 @@ typedef void (^ROKOReferralCompleteDiscountResponseBlock)(NSNumber * _Nullable d
 /**
  *  Call to confirm that code was used in purchase
  *
- *  @param issueReward      If Yest - Reward will be issued to Referrer
+ *  @param discountId       Discount object id
+ *  @param issueReward      If Yes - Reward will be issued to Referrer
  *  @param completionBlock  Completion block. Called both for successful and error result.
  */
-- (void)redeemReferralDiscount:(BOOL)issueReward completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)redeemReferralDiscount:(NSInteger)discountId issueReward:(BOOL)issueReward completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 
 /**
@@ -108,7 +109,7 @@ typedef void (^ROKOReferralCompleteDiscountResponseBlock)(NSNumber * _Nullable d
  *
  *  @param completionBlock  Completion block. Called both for successful and error result.
  */
-- (void)issueRewardWithcompletionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
+- (void)issueRewardForDiscountId:(NSInteger)discountId completionBlock:(nullable ROKOPortalRequestCompletionBlock)completionBlock;
 
 /**
  *  Returns the list of rewards. Choose onlyActive and unusedOnly rewards.
