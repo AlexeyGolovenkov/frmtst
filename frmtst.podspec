@@ -10,7 +10,7 @@ The ROKO.Mobi SDK provides a means for taking photos, dressing them up in sticke
                        DESC
 
   s.source           = { :git => "https://github.com/AlexeyGolovenkov/frmtst.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/rokolabs'
+  s.social_media_url = 'https://roko.mobi'
   s.platform         = :ios, '8.0'
   s.requires_arc     = true
   s.vendored_frameworks = 'ROKOMobi.framework'
