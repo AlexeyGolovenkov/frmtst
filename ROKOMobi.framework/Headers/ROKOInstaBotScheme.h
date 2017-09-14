@@ -9,7 +9,17 @@
 #import "ROKOComponentScheme.h"
 #import "ROKOImageDataObject.h"
 
+@class ROKOInstaBotChatBodyScheme;
+@class ROKOInstaBotMessageQuestionScheme;
+@class ROKOInstaBotChatIconScheme;
+@class ROKOInstaBotCloseButtonScheme;
+@class ROKOInstaBotUserResponseScheme;
+
+@class ROKOInstaBotUIScheme;
+
 @interface ROKOInstaBotScheme : ROKOComponentScheme
+
+//TODO remove properties below
 
 @property (nonatomic, assign) BOOL useChatIcon;
 @property (nonatomic, copy) NSString *closeButtonText;
@@ -22,5 +32,7 @@
 @property (nonatomic, strong) UIColor *buttonTextColor;
 @property (nonatomic, strong) UIColor *backgroundColor;
 @property (nonatomic, strong) ROKOImageDataObject *icon;
+
+@property (nonatomic, strong) ROKOInstaBotUIScheme *fullScheme;
 
 @end
