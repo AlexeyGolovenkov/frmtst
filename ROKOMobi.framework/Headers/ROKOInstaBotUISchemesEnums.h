@@ -10,13 +10,15 @@
 #define ROKOInstaBotUISchemesEnums_h
 
 typedef NS_ENUM(NSInteger, ROKOInstaBotBackgroundImageRepeatMode) {
-    ROKOInstaBotBackgroundImageRepeatModeNoRepeat = 0,
+    ROKOInstaBotBackgroundImageRepeatModeNotSet = 0,
+    ROKOInstaBotBackgroundImageRepeatModeNoRepeat,
     ROKOInstaBotBackgroundImageRepeatModeRepeat
 };
 
 
 typedef NS_ENUM(NSInteger, ROKOInstaBotBackgroundImagePosition) {
-    ROKOInstaBotBackgroundImagePositionCenter = 0,
+    ROKOInstaBotBackgroundImagePositionNotSet = 0,
+    ROKOInstaBotBackgroundImagePositionCenter,
     ROKOInstaBotBackgroundImagePositionTop,
     ROKOInstaBotBackgroundImagePositionLeft,
     ROKOInstaBotBackgroundImagePositionBottom,
@@ -24,11 +26,12 @@ typedef NS_ENUM(NSInteger, ROKOInstaBotBackgroundImagePosition) {
 };
 
 typedef NS_ENUM(NSInteger, ROKOFontStyle) {
-    ROKOFontStyleBold = 0,
+    ROKOFontStyleNotSet = 0,
+    ROKOFontStyleNone,
+    ROKOFontStyleBold,
     ROKOFontStyleItalic,
     ROKOFontStyleUnderlined,
     ROKOFontStyleStrikethrough,
-    ROKOFontStyleNone
 };
 
 

@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ROKOComponentScheme.h"
 #import "ROKOInstaBotUISchemesEnums.h"
 #import "ROKOInstaBotBackgroundScheme.h"
 
-@interface ROKOInstaBotChatBodyScheme : NSObject
+@interface ROKOInstaBotChatBodyScheme : ROKOComponentScheme
 
 @property (nullable, nonatomic, strong) ROKOInstaBotBackgroundScheme *background;
 

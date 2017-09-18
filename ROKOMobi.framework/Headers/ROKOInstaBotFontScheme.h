@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ROKOComponentScheme.h"
 #import "ROKOInstaBotUISchemesEnums.h"
 
-@interface ROKOInstaBotFontScheme : NSObject
+@interface ROKOInstaBotFontScheme : ROKOComponentScheme
 
 @property (nullable, nonatomic, strong) NSString*   family;
 @property (nullable, nonatomic, strong) NSString*   color;
-@property (assign, nonatomic) CGFloat               size;
+@property (nullable, nonatomic, strong) NSNumber*             size;
 @property (assign, nonatomic) ROKOFontStyle         style;
 
 @end

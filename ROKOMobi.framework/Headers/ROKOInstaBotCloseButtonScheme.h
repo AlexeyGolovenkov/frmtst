@@ -8,16 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ROKOComponentScheme.h"
 #import "ROKOInstaBotUISchemesEnums.h"
 #import "ROKOInstaBotFontScheme.h"
 #import "ROKOInstaBotBackgroundScheme.h"
 
-@interface ROKOInstaBotCloseButtonFontScheme : NSObject
+@interface ROKOInstaBotCloseButtonFontScheme : ROKOComponentScheme
 @property (nullable, nonatomic, strong) NSString*   family;
-@property (assign, nonatomic) CGFloat               size;
+@property (nullable, nonatomic, strong) NSNumber*   size;
 @end
 
-@interface ROKOInstaBotCloseButtonScheme : NSObject
+@interface ROKOInstaBotCloseButtonScheme : ROKOComponentScheme
 
 @property (nullable, nonatomic, strong) ROKOInstaBotCloseButtonFontScheme *font;
 @property (nullable, nonatomic, strong) ROKOInstaBotBackgroundScheme *background;

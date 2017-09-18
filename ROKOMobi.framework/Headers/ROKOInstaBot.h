@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "ROKOInstaBotViewController.h"
 #import "ROKOInstaBotScheme.h"
-#import "ROKOInstaBotUIScheme.h"
 #import "ROKOInstaBotConversationTreeNode.h"
 #import "ROKOComponent.h"
 
@@ -51,7 +50,7 @@ typedef void (^ROKOInstaBotLoadCompletionBlock)(ROKOInstaBotViewController * _Nu
 
 - (nonnull ROKOInstaBotScheme *)scheme;
 
-+ (nonnull ROKOInstaBotUIScheme *)defaultScheme;
++ (nonnull ROKOInstaBotScheme *)defaultScheme;
 
 - (nullable NSString *)applicationName;
 

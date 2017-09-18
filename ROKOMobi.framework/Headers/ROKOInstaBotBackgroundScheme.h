@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ROKOComponentScheme.h"
 #import "ROKOInstaBotUISchemesEnums.h"
 
-@interface ROKOInstaBotBackgroundScheme : NSObject
+@interface ROKOInstaBotBackgroundScheme : ROKOComponentScheme
 
 @property (nullable, nonatomic, strong) NSString*       color;
-@property (nonatomic) CGFloat                           opacity;
+@property (nullable, nonatomic, strong) NSNumber*       opacity;
 @property (nullable, nonatomic, strong) NSString*       image;
 @property (nonatomic) ROKOInstaBotBackgroundImageRepeatMode     repeat;
 @property (nonatomic) ROKOInstaBotBackgroundImagePosition    position;

@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ROKOComponentScheme.h"
 #import "ROKOInstaBotBackgroundScheme.h"
 
-@interface ROKOInstaBotChatIconScheme : NSObject
+@interface ROKOInstaBotChatIconScheme : ROKOComponentScheme
 
-@property (nonatomic) CGFloat   borderRadius;
+@property (nullable, nonatomic, strong) NSNumber *borderRadius;
 
-@property (nonatomic, strong) ROKOInstaBotBackgroundScheme *background;
+@property (nullable, nonatomic, strong) ROKOInstaBotBackgroundScheme *background;
 
 @end

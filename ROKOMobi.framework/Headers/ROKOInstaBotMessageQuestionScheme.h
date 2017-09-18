@@ -8,15 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "ROKOComponentScheme.h"
 #import "ROKOInstaBotUISchemesEnums.h"
 #import "ROKOInstaBotFontScheme.h"
 #import "ROKOInstaBotBackgroundScheme.h"
 
-@interface ROKOInstaBotMessageQuestionScheme : NSObject
+@interface ROKOInstaBotMessageQuestionScheme : ROKOComponentScheme
 
-@property CGFloat width;
-@property CGFloat padding;
-@property CGFloat borderRadius;
+@property (nullable, nonatomic, strong) NSNumber* width;
+@property (nullable, nonatomic, strong) NSNumber* padding;
+@property (nullable, nonatomic, strong) NSNumber* borderRadius;
 
 @property (nullable, nonatomic, strong) ROKOInstaBotBackgroundScheme *background;
 
