@@ -13,6 +13,8 @@
 
 @interface ROKOInstaBotChatIconScheme : ROKOComponentScheme
 
+@property (nullable, nonatomic, strong) NSNumber* useIcon;
+
 @property (nullable, nonatomic, strong) NSNumber *borderRadius;
 
 @property (nullable, nonatomic, strong) ROKOInstaBotBackgroundScheme *background;
