@@ -48,19 +48,7 @@ typedef void (^ROKOInstaBotLoadCompletionBlock)(ROKOInstaBotViewController * _Nu
  */
 - (nonnull NSArray <NSString *> *)conversationHistory;
 
-/**
- * Current instabot UI scheme
- *
- * @return current UI scheme
- */
-- (nonnull ROKOInstaBotScheme *)scheme;
-
-- (void)setScheme:(nonnull ROKOInstaBotScheme *)scheme;
-
-/**
- * Default UI scheme that applying to all instabots which will be created if special scheme won't be defined for special instabot object
- */
-+ (nonnull ROKOInstaBotScheme *)defaultScheme;
+- (nullable ROKOInstaBotScheme *)uiScheme;
 
 - (nullable NSString *)applicationName;
 
